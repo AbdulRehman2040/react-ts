@@ -1,0 +1,412 @@
+.expert-service {
+  padding: 100px 0;
+  background-color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.expert-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.expert-wrapper {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.expert-image-container {
+  flex: 1;
+  position: relative;
+  min-width: 500px;
+}
+
+.main-image {
+  width: 100%;
+  height: 580px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.floating-image {
+  position: absolute;
+  bottom: 40px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 3px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.floating-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.expert-content {
+  flex: 1;
+  max-width: 570px;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.orange-label {
+  background-color: #FF6B00;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.text-label {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.expert-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.highlight {
+  color: #FF6B00;
+  display: block;
+}
+
+.expert-description {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+}
+
+.dot-container {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 107, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #FF6B00;
+  border-radius: 50%;
+}
+
+.feature-text {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.cta-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.read-more-btn {
+  padding: 16px 32px;
+  background-color: #FF6B00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #e65100;
+}
+
+.arrow {
+  font-size: 20px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+}
+
+.phone-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background: #FF6B00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-icon i {
+  color: white;
+  font-size: 16px;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  color: #666;
+  font-size: 11px;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.phone-number {
+  color: #222;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+}
+
+@media (max-width: 1200px) {
+  .expert-wrapper {
+    gap: 40px;
+  }
+
+  .expert-image-container {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .expert-wrapper {
+    flex-direction: column;
+  }
+
+  .expert-image-container {
+    min-width: 100%;
+  }
+
+  .expert-content {
+    max-width: 100%;
+  }
+
+  .floating-image {
+    right: 20px;
+    width: 160px;
+    height: 160px;
+    border: 3px solid white;
+  }
+}
+
+@media (max-width: 768px) {
+  .expert-service {
+    padding: 60px 0;
+  }
+
+  .expert-title {
+    font-size: 36px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .feature-item {
+    font-size: 16px;
+  }
+
+  .cta-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .quote-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .contact-info {
+    gap: 8px;
+  }
+
+  .phone-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .phone-icon svg {
+    width: 90px;
+    height: 70px;
+  }
+
+  .contact-text-container {
+    display: none;
+  }
+
+  .contact-info .phone-number {
+    display: block;
+    font-size: 14px;
+    color: #222;
+  }
+
+  /* Show only phone number on mobile */
+  .contact-info {
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-label {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+}
+.quote-btn2 {
+  background: #FF6B00;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.quote-btn2 .arrow {
+  font-size: 18px;
+}
+
+.quote-btn .arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.quote-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+.quote-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+}
+
+.quote-btn i {
+  font-size: 14px;
+  transition: transform 0.3s linear;
+}
+
+.quote-btn:hover i {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .quote-btn2 {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .contact-info2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .phone-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .phone-icon i {
+    color: white;
+    font-size: 16px;
+  }
+
+  /* Remove the display: none and adjust the text container for mobile */
+  .contact-text-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-label {
+    color: #666;
+    font-size: 11px;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  .phone-number {
+    color: #222;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+  }
+}
+
+
+
+
+

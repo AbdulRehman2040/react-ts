@@ -1,0 +1,134 @@
+.premium-service {
+  position: relative;
+  padding: 80px 0; /* Reduced padding */
+  background-image: url('/src/assets/images/about/04.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.premium-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.premium-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.premium-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.premium-content {
+  max-width: 600px;
+}
+
+.premium-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.free-text {
+  background-color: #FF6B00;
+  color: white;
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.contact-text {
+  color: #FF6B00;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.premium-title {
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.premium-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.quote-btn1, .contact-btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px; /* Ensure both buttons have same minimum width */
+  height: 45px; /* Set exact same height for both buttons */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-btn1 {
+  background: #FF6B00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.quote-btn:hover {
+  background: #e65c00;
+}
+
+.contact-btn:hover {
+  background: white;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .premium-service {
+    padding: 60px 0;
+  }
+
+  .premium-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .premium-title {
+    font-size: 32px;
+  }
+
+  .premium-buttons {
+    justify-content: center;
+  }
+}
+

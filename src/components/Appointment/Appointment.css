@@ -1,0 +1,270 @@
+
+
+
+.appointment-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.appointment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 60px;
+}
+
+.info-column {
+  flex: 1;
+}
+
+.quality-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.orange-label {
+  background-color: #FF6B00;
+  color: white;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.solution-label {
+  color: #FF6B00;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.highlight {
+  color: #FF6B00;
+}
+
+.description {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #FFF3EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon img {
+  width: 80px;
+  height: 30px;
+}
+
+.stat-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 5px 0;
+}
+
+.stat-content p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.stat-image {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  aspect-ratio: 1 / 1; /* Makes it square like other stat boxes */
+  overflow: hidden;
+}
+
+.stat-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: Add hover effect */
+.stat-image:hover img {
+  transform: scale(1.05);
+}
+
+.form-column {
+  flex: 1;
+}
+
+.appointment-form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.appointment-form h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 12px 0;
+}
+
+.appointment-form p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 35px 0;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #666;
+  background-color: #f8f8f8;
+  box-sizing: border-box; /* Add this to include padding in width calculation */
+}
+
+.form-field input::placeholder {
+  color: #666;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: #FF6B00;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Increased gap */
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #FF6B00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #e65c00;
+}
+
+@media (max-width: 992px) {
+  .appointment-container {
+    flex-direction: column;
+  }
+  
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stat-image {
+    grid-column: span 2;
+    max-width: 300px; /* Limit width on tablet */
+    justify-self: center; /* Center the image in its grid column */
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .appointment-section {
+    padding: 60px 0;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-image {
+    grid-column: auto;
+    max-width: 250px; /* Smaller width for mobile */
+    margin: 0 auto; /* Center the image */
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .appointment-form {
+    padding: 30px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .appointment-container {
+    max-width: 1200px;
+    gap: 80px; /* Increased gap between columns */
+  }
+
+  .form-column {
+    max-width: 500px; /* Limit form width on large screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+

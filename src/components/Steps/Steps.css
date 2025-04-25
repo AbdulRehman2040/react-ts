@@ -1,0 +1,195 @@
+.steps-section {
+  padding: 100px 0;
+  background-color: #f8f9fa;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.steps-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.steps-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.quality-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.orange-text {
+  background-color: #FF6B00;
+  color: white;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.solution-text {
+  color: #FF6B00;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.step-item {
+  background: white;
+  padding: 40px 25px;
+  text-align: center;
+  position: relative;
+  min-height: 280px;
+  margin-bottom: 45px;
+}
+
+/* Add a pseudo-element for the polygon shape */
+.step-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 25px; /* Reduced to show full circle */
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  z-index: 1;
+}
+
+/* Ensure content stays above the polygon shape */
+.step-icon,
+.step-title,
+.step-description {
+  position: relative;
+  z-index: 2;
+}
+
+.step-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #FFF6F0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+}
+
+.step-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.step-item:hover .step-icon svg path {
+  stroke: #FFF;
+  transition: stroke 0.3s ease;
+}
+
+.step-item:hover .step-icon svg path[fill="#FD8F14"] {
+  fill: #FFF;
+  transition: fill 0.3s ease;
+}
+
+.step-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 15px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.step-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 250px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.step-number {
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #FF6B00;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  z-index: 3;
+}
+
+/* Remove or modify this if it's interfering */
+.step-item::after {
+  content: none;
+}
+
+/* Add hover effect */
+.step-item:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.step-item:hover .step-icon {
+  background-color: #FF6B00;
+  transition: background-color 0.3s ease;
+}
+
+.step-item:hover .step-icon img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .steps-section {
+    padding: 60px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
