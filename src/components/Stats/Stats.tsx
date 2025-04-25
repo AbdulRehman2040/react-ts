@@ -1,21 +1,8 @@
 import React from 'react';
 import './Stats.css';
 
-interface StatItemProps {
-  number: string;
-  text: string;
-}
 
-const StatItem: React.FC<StatItemProps> = ({ number, text }) => {
-  return (
-    <div className="stat-item">
-      <div className="stat-info">
-        <h3 className="stat-number">{number}</h3>
-        <p className="stat-text">{text}</p>
-      </div>
-    </div>
-  );
-};
+
 
 const Stats: React.FC = () => {
   return (
